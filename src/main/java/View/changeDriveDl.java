@@ -145,6 +145,16 @@ public class changeDriveDl extends javax.swing.JDialog {
 
     private void changeTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeTextActionPerformed
         // TODO add your handling code here:
+        
+        mainfmFrom.getDriverTable().setValueAt(nameText.getText().toString(), index, 1);
+        mainfmFrom.getDriverTable().setValueAt(AddressText.getText().toString(), index, 2);
+        mainfmFrom.getDriverTable().setValueAt(levelcbx.getSelectedItem(), index, 3);
+        
+        mainfmFrom.getArrDriver().set(index, new Driver(idText.getText().toString(), nameText.getText().toString(),
+                AddressText.getText().toString(), levelcbx.getSelectedItem().toString()));
+        
+        mainfmFrom.getController().writeToFile(mainfmFrom.getArrDriver(), "driver.txt");
+        
     }//GEN-LAST:event_changeTextActionPerformed
 
     private void idTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idTextActionPerformed

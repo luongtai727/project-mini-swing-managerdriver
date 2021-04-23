@@ -36,6 +36,15 @@ public class mainFrom extends javax.swing.JFrame implements view{
         showDataAll();
     }
 
+    public JTable getDriverTable() {
+        return driverTable;
+    }
+
+    public void setDriverTable(JTable driverTable) {
+        this.driverTable = driverTable;
+    }
+ 
+    
     public DefaultTableModel getDefaultDriver() {
         return defaultDriver;
     }
@@ -59,8 +68,6 @@ public class mainFrom extends javax.swing.JFrame implements view{
     public void setArrDriver(ArrayList<Driver> arrDriver) {
         this.arrDriver = arrDriver;
     }
-    
-    
     
     public  void setArrayListDrive(Driver value, int index)
     {
