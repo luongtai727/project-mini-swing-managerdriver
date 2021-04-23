@@ -35,6 +35,32 @@ public class mainFrom extends javax.swing.JFrame implements view{
         defaultDriver = (DefaultTableModel) driverTable.getModel();
         showDataAll();
     }
+
+    public DefaultTableModel getDefaultDriver() {
+        return defaultDriver;
+    }
+
+    public void setDefaultDriver(DefaultTableModel defaultDriver) {
+        this.defaultDriver = defaultDriver;
+    }
+
+    public ControllerIMP getController() {
+        return controller;
+    }
+
+    public void setController(ControllerIMP controller) {
+        this.controller = controller;
+    }
+
+    public ArrayList<Driver> getArrDriver() {
+        return arrDriver;
+    }
+
+    public void setArrDriver(ArrayList<Driver> arrDriver) {
+        this.arrDriver = arrDriver;
+    }
+    
+    
     
     public  void setArrayListDrive(Driver value, int index)
     {
