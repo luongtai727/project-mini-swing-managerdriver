@@ -271,7 +271,7 @@ public class mainFrom extends javax.swing.JFrame implements view{
         
         int i = driverTable.getSelectedRow();
         
-        if (i > 0) {
+        if (i >= 0) {
             defaultDriver.removeRow(i);
             arrDriver.remove(i);
             controller.writeToFile(arrDriver, "driver.txt");
