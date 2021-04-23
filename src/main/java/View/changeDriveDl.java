@@ -33,17 +33,13 @@ public class changeDriveDl extends javax.swing.JDialog {
         nameText.setText(DriverGetValue.getNameString());
         AddressText.setText(DriverGetValue.getAdressString());
         levelcbx.setSelectedItem(DriverGetValue.getLevelString());
+        System.err.println("asdasd");
        
     }
 
     private changeDriveDl(JFrame jFrame, boolean b) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-  
-
-    
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
