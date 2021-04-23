@@ -6,6 +6,7 @@
 package View;
 
 import Model.Driver;
+import javax.swing.JFrame;
 
 /**
  *
@@ -33,6 +34,10 @@ public class changeDriveDl extends javax.swing.JDialog {
         AddressText.setText(DriverGetValue.getAdressString());
         levelcbx.setSelectedItem(DriverGetValue.getLevelString());
        
+    }
+
+    private changeDriveDl(JFrame jFrame, boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
   
@@ -78,6 +83,7 @@ public class changeDriveDl extends javax.swing.JDialog {
 
         levelcbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D", "E", "F", "G", "H", "T", "N", "M", "J", "K", "I", "U", "O", "Y", "T", "R", "Q", "W", "E", "Z" }));
 
+        idText.setEnabled(false);
         idText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idTextActionPerformed(evt);
