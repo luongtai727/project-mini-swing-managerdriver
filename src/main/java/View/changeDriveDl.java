@@ -33,7 +33,6 @@ public class changeDriveDl extends javax.swing.JDialog {
         nameText.setText(DriverGetValue.getNameString());
         AddressText.setText(DriverGetValue.getAdressString());
         levelcbx.setSelectedItem(DriverGetValue.getLevelString());
-        System.err.println("asdasd");
        
     }
 
